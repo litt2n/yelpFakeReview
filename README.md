@@ -27,7 +27,7 @@ cleaningText(txt): cleaning(doc) + remove non-verbal
 MeanEmbeddingVectorizer: average the fake and real Word2Vec vocabularies, transform the n reviews into vectors nxN: N is an average of 2 vectors from 2 different vocabularies fake and real
 shuffleData(dfIn, colID): select/shuffle samples in dataframe 
 ```
-### Word Processing:
+### Word Vectorizer:
 
 * Word2Vec
 
