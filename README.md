@@ -42,16 +42,7 @@ shuffleData(dfIn, colID): select/shuffle samples in dataframe
 
 ## Acknowledgments
 
-* Data creator
-* author = {Shebuti Rayana and Leman Akoglu},
-* title = {Collective Opinion Spam Detection: Bridging Review Networks and metadata},
-* booktitle = {Proceeding of the 21st ACM SIGKDD international conference
-on Knowledge discovery and data mining, {KDD’15}},
-year = {2015},
-
-```
-code blocks for commands
-```
+* Data creator: Shebuti Rayana and Leman Akoglu
 
 
 
