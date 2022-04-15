@@ -17,15 +17,38 @@ Trial different machine learning algorithms to improve fake review filter
 ### Details
 
 * preProcessing:
+```
+cleaning(doc): lemmatize and remove stop words by spacy
+w2v_model: create Word2Vec vocabularies
+```
 * trainingModel:
+```
+cleaningText(txt): cleaning(doc) + remove non-verbal
+MeanEmbeddingVectorizer: average the fake and real Word2Vec vocabularies, transform the n reviews into vectors nxN: N is an average of 2 vectors from 2 different vocabularies fake and real
+shuffleData(dfIn, colID): select/shuffle samples in dataframe 
+```
+### Word Processing:
 
-@inproceedings{DBLP:conf/sigkdd/Akoglu15,
-author = {Shebuti Rayana and Leman Akoglu},
-title = {Collective Opinion Spam Detection: Bridging Review Networks and metadata},
-booktitle = {Proceeding of the 21st ACM SIGKDD international conference
+* Word2Vec
+
+* TFIdf
+
+### Testing models:
+
+* MLPClassifier: overfitting
+* MultinomialNB: ~60-68% accuracy
+* LogisticRegression: ~60-68% accuracy
+* ExtraTreesClassifier: 
+
+## Acknowledgments
+
+* Data creator
+* author = {Shebuti Rayana and Leman Akoglu},
+* title = {Collective Opinion Spam Detection: Bridging Review Networks and metadata},
+* booktitle = {Proceeding of the 21st ACM SIGKDD international conference
 on Knowledge discovery and data mining, {KDD’15}},
 year = {2015},
-}
+
 ```
 code blocks for commands
 ```
